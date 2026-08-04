@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARD</title>
+</head>
+
+<body>
+    <div class="filtros">
+        <button class="filtrar-btn active" data-filter="all">Todas</button>
+        <button class="filtrar-btn" data-filter="fav">Favoritas</button>
+    </div>
+
+    <div id="contenedor-cards">
+        <div class="card" data-id="c1">
+            <img style="height:25vh"
+                src="https://s3.amazonaws.com/rtvc-assets-senalmemoria.gov.co/s3fs-public/styles/sm_card_lg_webp/public/field_image/1a76fc9d78dc2a3abb4431882931feda_XL.jpg.webp?itok=6Erh--EZ">
+            <h1>Imagen de la NASA</h1>
+            <button onclick="toggleFavorito('c1', this)">☆ Guardar</button>
+        </div>
+
+        <div class="card" data-id="c2">
+            <img style="height:25vh"
+                src="https://s3.amazonaws.com/rtvc-assets-senalmemoria.gov.co/s3fs-public/styles/sm_card_lg_webp/public/field_image/1a76fc9d78dc2a3abb4431882931feda_XL.jpg.webp?itok=6Erh--EZ">
+            <h1>Nebulosa</h1>
+            <button onclick="toggleFavorito('c2', this)">☆ Guardar</button>
+        </div>
+
+        <div class="card" data-id="c3">
+            <img style="height:25vh"
+                src="https://s3.amazonaws.com/rtvc-assets-senalmemoria.gov.co/s3fs-public/styles/sm_card_lg_webp/public/field_image/1a76fc9d78dc2a3abb4431882931feda_XL.jpg.webp?itok=6Erh--EZ">
+            <h1>Galaxia espiral</h1>
+            <button onclick="toggleFavorito('c3', this)">☆ Guardar</button>
+        </div>
+    </div>
+
+    <script src="./js/card.js"></script>
+</body>
+
+</html>
